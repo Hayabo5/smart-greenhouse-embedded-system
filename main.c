@@ -10,8 +10,6 @@
  * - Light sensor + LED/servo control for light/dark simulation
  * - Temperature alarm with adjustable limits
  *
- * Notes:
- * - This file intentionally contains ONLY NEW comments (English) for the presentation.
  */
 
 
@@ -677,7 +675,7 @@ void Servo_UpdateFromKey(int key);
 #define SERVO_MIN_DUTY 1837      
 #define SERVO_MAX_DUTY 5197      
 
-/* Set servo angle by mapping 0..180° into PWM duty cycle limits. */
+/* Set servo angle by mapping 0..180Â° into PWM duty cycle limits. */
 void Servo_SetAngleDegrees(double angle)
 {
     if (angle < 0.0)   angle = 0.0;
@@ -2753,7 +2751,7 @@ void SysTick_Handler(void)
         {
             return;
         }
-        /* Req. 6 – simulation speed control.
+        /* Req. 6 Â– simulation speed control.
            sim_seconds tells Clock_AdvanceSeconds() how much simulated time
            to jump per real second tick. */
         unsigned int sim_seconds;
